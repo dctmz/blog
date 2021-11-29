@@ -83,7 +83,7 @@ search:
 
 # Donate
 donate:
-  enable: true
+  enable: false
   # 微信打赏
   wechatpay:
     qrcode: images/donate/wechatpayimg.png
@@ -102,13 +102,13 @@ share:
 
 # Github
 github:
-  username: cofess # github username
+  username: dctmz # github username
 
 # Comment
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: valine # 启用哪种评论系统
+  type: gitalk # 启用哪种评论系统
   disqus: # enter disqus shortname here
   youyan:
     uid: 1783844 # enter youyan uid
@@ -121,11 +121,11 @@ comment:
     ClientSecret:
     lazy: false
   gitalk: # gitalk. https://gitalk.github.io/
-    owner: #必须. GitHub repository 所有者，可以是个人或者组织。
-    admin: #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-    repo: #必须. GitHub repository.
-    ClientID: #必须. GitHub Application Client ID.
-    ClientSecret: #必须. GitHub Application Client Secret.
+    owner: dctxf #必须. GitHub repository 所有者，可以是个人或者组织。
+    admin: dctxf #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+    repo: https://github.com/dctmz/blog #必须. GitHub repository.
+    ClientID: 35020a9223f0ec2df9d8 #必须. GitHub Application Client ID.
+    ClientSecret: bed5f7f2efd340cb3c30518ea5310ec6d0e0ec0d #必须. GitHub Application Client Secret.
   valine: # Valine. https://valine.js.org
     appid: # your leancloud application appid
     appkey: # your leancloud application appkey
@@ -185,22 +185,22 @@ fb_app_id:
 # profile
 profile:
   enabled: true # Whether to show profile bar
-  avatar: images/avatar.jpg
+  avatar: https://img.zcool.cn/community/045fea553fb56400000140277153bf.jpg@160w_160h_1c_1e_1o_100sh.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: dctmz
-  author_title: Web Developer & Designer
+  author_title: Web Developer
   author_description: 个人简介。
-  location: Shenzhen, China
+  location: China
   follow: https://github.com/dctmz
   # Social Links
   social:
     links:
       github: https://github.com/dctmz
-      weibo: http://weibo.com/dctmz
-      twitter: https://twitter.com/iwebued
-      facebook: /
-      dribbble: /
-      behance: https://www.behance.net/dctmz
+      # weibo: http://weibo.com/dctmz
+      # twitter: https://twitter.com/iwebued
+      # facebook: /
+      # dribbble: /
+      # behance: https://www.behance.net/dctmz
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills
@@ -215,10 +215,10 @@ profile:
   # My Personal Links
   links:
     Github: https://github.com/dctmz
-    Blog: http://blog.dctmz.com
-    微博: http://weibo.com/dctmz
-    花瓣: http://huaban.com/dctmz
-    Behance: https://www.behance.net/dctmz
+    # Blog: http://blog.dctmz.com
+    # 微博: http://weibo.com/dctmz
+    # 花瓣: http://huaban.com/dctmz
+    # Behance: https://www.behance.net/dctmz
   # My Personal Labels
   labels:
     - 前端
@@ -227,10 +227,10 @@ profile:
     - Web前端
     - 网页重构
   # My Personal Works
-  works:
-    name:
-      link: http://www.example.com
-      date: 2016
+  # works:
+  #   name:
+  #     link: http://www.example.com
+  #     date: 2016
   # My Personal Projects
   projects:
-    dctmz/bolg: https://github.com/dctmz/blog
+    dctmz/blog: https://github.com/dctmz/blog
