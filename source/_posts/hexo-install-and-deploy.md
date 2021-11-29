@@ -80,13 +80,13 @@ deploy:
 hexo clean && hexo deploy
 ```
 
-#### GitHub设置
+#### GitHub 设置
 
-一般情况下，GitHub已经自动设置好了，如果没有设置好，找到[page](https://github.com/dctmz/blog/settings/pages)设置
+一般情况下，GitHub 已经自动设置好了，如果没有设置好，找到[page](https://github.com/dctmz/blog/settings/pages)设置
 
 我的设置如下
 
-![](https://gitee.com/dctxf/pic/raw/master/2021-11-29-16 15:27: 340: 6i8nmy8ko2:1638173727337.png)
+![](https://gitee.com/dctxf/pic/raw/master/1638174253930-1638174253928.png)
 
 #### 预览
 
@@ -99,4 +99,3 @@ hexo clean && hexo deploy
 ```html
 https://[username].github.io/[repo]/
 ```
-

@@ -1,4 +1,9 @@
 ---
-title: about
-date: 2021-11-29 15:32:05
+title: 关于
+description: 个人简介
+layout: about
+comments: false
+sidebar: custom
 ---
+
+个人详细介绍

@@ -121,9 +121,9 @@ comment:
     ClientSecret:
     lazy: false
   gitalk: # gitalk. https://gitalk.github.io/
-    owner: dctxf #必须. GitHub repository 所有者，可以是个人或者组织。
-    admin: dctxf #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-    repo: https://github.com/dctmz/blog #必须. GitHub repository.
+    owner: dctmz #必须. GitHub repository 所有者，可以是个人或者组织。
+    admin: dctmz #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+    repo: blog #必须. GitHub repository.
     ClientID: 35020a9223f0ec2df9d8 #必须. GitHub Application Client ID.
     ClientSecret: bed5f7f2efd340cb3c30518ea5310ec6d0e0ec0d #必须. GitHub Application Client Secret.
   valine: # Valine. https://valine.js.org
@@ -211,12 +211,10 @@ profile:
     HTML+CSS: ★★★☆☆
     Bootstrap: ★★★☆☆
     ThinkPHP: ★★★☆☆
-    平面设计: ★★★☆☆
   # My Personal Links
   links:
     Github: https://github.com/dctmz
-    # Blog: http://blog.dctmz.com
-    # 微博: http://weibo.com/dctmz
+    Blog: https://dctmz.github.io/blog/
     # 花瓣: http://huaban.com/dctmz
     # Behance: https://www.behance.net/dctmz
   # My Personal Labels
@@ -227,10 +225,10 @@ profile:
     - Web前端
     - 网页重构
   # My Personal Works
-  # works:
-  #   name:
-  #     link: http://www.example.com
-  #     date: 2016
+  works:
+    name:
+      link: http://www.example.com
+      date: 2016
   # My Personal Projects
   projects:
     dctmz/blog: https://github.com/dctmz/blog
