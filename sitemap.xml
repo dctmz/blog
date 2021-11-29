@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/2021/11/29/hexo-install-and-deploy/</loc>
+    
+    <lastmod>2021-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/about/index.html</loc>
+    
+    <lastmod>2021-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/index.html</loc>
+    
+    <lastmod>2021-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/repository/index.html</loc>
+    
+    <lastmod>2021-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/links/index.html</loc>
+    
+    <lastmod>2021-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/categories/index.html</loc>
+    
+    <lastmod>2021-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/books/index.html</loc>
+    
+    <lastmod>2021-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/404.html</loc>
+    
+    <lastmod>2021-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  <url>
+    <loc>https://dctmz.github.io/blog</loc>
+    <lastmod>2021-11-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/hexo/</loc>
+    <lastmod>2021-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/blog/</loc>
+    <lastmod>2021-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/github/</loc>
+    <lastmod>2021-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/pure/</loc>
+    <lastmod>2021-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+</urlset>
