@@ -2,9 +2,12 @@
 title: hexo 博客搭建
 date: 2021-11-29 10:53:10
 tag: [hexo, blog, github, pure]
+categories: [开发工具]
 ---
 
 本文介绍博客搭建的过程
+
+<!-- more -->
 
 ## 初始化仓库
 

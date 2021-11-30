@@ -8,6 +8,8 @@
     "deploy": "hexo deploy",
     "server": "hexo server",
     "dev": "hexo server",
+    "post": "hexo new",
+    "page": "hexo new page",
     "cd": "npm run clean && npm run deploy"
   },
   "hexo": {
