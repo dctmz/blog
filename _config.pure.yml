@@ -124,8 +124,8 @@ comment:
     owner: dctmz #必须. GitHub repository 所有者，可以是个人或者组织。
     admin: dctmz #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
     repo: blog #必须. GitHub repository.
-    ClientID: 35020a9223f0ec2df9d8 #必须. GitHub Application Client ID.
-    ClientSecret: bed5f7f2efd340cb3c30518ea5310ec6d0e0ec0d #必须. GitHub Application Client Secret.
+    ClientID: 8b16566cf0a19e809a53 #必须. GitHub Application Client ID.
+    ClientSecret: e668cc6c1bfbaecb67fb3996cb0efdb5b890a0a6 #必须. GitHub Application Client Secret.
   valine: # Valine. https://valine.js.org
     appid: # your leancloud application appid
     appkey: # your leancloud application appkey
