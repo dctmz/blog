@@ -5,10 +5,10 @@
 # Site
 title: DCTMZ's blog
 subtitle: "一个自由的小小小团队"
-description: "每天学习一点点，终有一天小鸟为长大"
+description: "每天学习一点点，终有一天小鸟会长大"
 keywords: fed,front,server,技术,前端,后端,html,css
 author: dctmz
-language: zh-CN
+language: zh-Hans
 timezone: ""
 
 # URL
@@ -97,7 +97,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: pure
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
