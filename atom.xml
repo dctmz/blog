@@ -6,7 +6,7 @@
   <link href="https://dctmz.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://dctmz.github.io/blog/"/>
-  <updated>2021-12-28T07:39:13.594Z</updated>
+  <updated>2021-12-28T08:29:00.621Z</updated>
   <id>https://dctmz.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端的部署方式</title>
+    <link href="https://dctmz.github.io/blog/2021/12/28/%E5%89%8D%E7%AB%AF%E7%9A%84%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F/"/>
+    <id>https://dctmz.github.io/blog/2021/12/28/%E5%89%8D%E7%AB%AF%E7%9A%84%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F/</id>
+    <published>2021-12-28T07:42:19.000Z</published>
+    <updated>2021-12-28T08:29:00.621Z</updated>
+    
+    <content type="html"><![CDATA[<p>随着前端的发展，从最早的静态页面，到后来的动态页面，再到后来的前后端分离，前端部署方式也随着变化。这篇文章就简单记录下，前端的一些部署方式。</p><span id="more"></span><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>其实本质上来说前端页面无非就是一些静态资源，用户通过<code>URI</code>的方式访问这些静态资源。</p><blockquote><p>在电脑术语中，统一资源标识符（Uniform Resource Identifier，URI)是一个用于标识某一互联网资源名称的字符串。 该种标识允许用户对任何（包括本地和<a href="https://baike.baidu.com/item/%E4%BA%92%E8%81%94%E7%BD%91/199186">互联网</a>）的资源通过特定的协议进行交互操作。URI由包括确定语法和相关协议的方案所定义。</p><p>– 百度百科</p></blockquote><p>那么其实只要能够有一个静态资源服务即可部署一个前端网站。</p><h2 id="访问方式"><a href="#访问方式" class="headerlink" title="访问方式"></a>访问方式</h2><p>本来通过URI用户可以直接访问资源，但是前端目前有两种路由方式</p><ul><li>hash</li><li>history</li></ul><p><code>history</code>的方式好处理，跟之前的没有太大区分，<code>hash</code>的方式就比较特别了。</p><h3 id="history"><a href="#history" class="headerlink" title="history"></a>history</h3><p>体现在URL上的话，就是</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.baidu.com/s?wd=name</span><br></pre></td></tr></table></figure><p>域名抛去不看，只看资源路径的话<code>/s</code>，只要服务器能够返回这个文件即可。此时需要服务器有多份静态资源，当然前端独立部署之后，也可以只有一份静态资源，具体方式往下看。</p><h3 id="hash"><a href="#hash" class="headerlink" title="hash"></a>hash</h3><p>体现在URL上的话就是</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.baidu.com/#/s</span><br></pre></td></tr></table></figure><p>路径为<code>/</code>，那么问题来了，怎么访问到不同的资源呢，这时候服务端需要不管资源路径为什么，都必须返回一个页面文件。不同的资源通过hash来定位，即<code>#/s</code>来定位，页面通过js判断不同的hash来确定执行什么样的方法，来给用户展示不同的页面。</p><p>当然这时候需要静态服务器做一些特殊的处理，在访问任何路径的时候都返回同一个html页面。</p><h2 id="常见的部署方式"><a href="#常见的部署方式" class="headerlink" title="常见的部署方式"></a>常见的部署方式</h2><p>从上面的原理来看，部署方式就很简单了，我们常见的可能有几种</p><h3 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h3><p>nginx作为一个反向代理服务器，可谓是本领强大，轻松启动一个静态服务更是不在话下，只要我们把静态资源放在服务器上，然后用nginx做代理即可</p><h3 id="oss"><a href="#oss" class="headerlink" title="oss"></a>oss</h3><p>oss虽然是一个对象管理，但是它提供了一个静态网站服务，只要开启后就可以当做一个静态网站了。</p><h3 id="pages"><a href="#pages" class="headerlink" title="pages"></a>pages</h3><p>pages服务有很多，比如GitHub，gitee等都有提供。</p><h3 id="后端提供"><a href="#后端提供" class="headerlink" title="后端提供"></a>后端提供</h3><p>后端一般都会提供一个静态服务</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;随着前端的发展，从最早的静态页面，到后来的动态页面，再到后来的前后端分离，前端部署方式也随着变化。这篇文章就简单记录下，前端的一些部署方式。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="开发" scheme="https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="前端" scheme="https://dctmz.github.io/blog/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="deploy" scheme="https://dctmz.github.io/blog/tags/deploy/"/>
+    
+    <category term="front" scheme="https://dctmz.github.io/blog/tags/front/"/>
+    
+    <category term="webpack" scheme="https://dctmz.github.io/blog/tags/webpack/"/>
+    
+  </entry>
   
   <entry>
     <title>闲聊团队</title>
