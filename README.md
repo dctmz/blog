@@ -6,7 +6,7 @@
 
 ## 主题
 
-主题采用next
+主题采用 next
 
 ### 安装主题
 
@@ -34,17 +34,10 @@ npm i
 npm run dev
 ```
 
-
-
 ## 部署
 
-项目采用GitHub进行部署，直接运行命令即可部署，命令如下
+项目采用 GitHub 进行部署，直接运行命令即可部署，命令如下
 
 ```bash
-npm run deploy
+npm run cd
 ```
-
-
-
-
-
