@@ -6,7 +6,7 @@
   <link href="https://dctmz.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://dctmz.github.io/blog/"/>
-  <updated>2021-12-28T08:29:00.621Z</updated>
+  <updated>2021-12-29T09:41:23.158Z</updated>
   <id>https://dctmz.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>h5跳转微信小程序</title>
+    <link href="https://dctmz.github.io/blog/2021/12/29/h5%E8%B7%B3%E8%BD%AC%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <id>https://dctmz.github.io/blog/2021/12/29/h5%E8%B7%B3%E8%BD%AC%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</id>
+    <published>2021-12-29T03:13:17.000Z</published>
+    <updated>2021-12-29T09:41:23.158Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文介绍 h5 如何跳转微信小程序</p><span id="more"></span><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><blockquote><p>为了更好的将用户引流到小程序。所以就需要 H5 跳到小程序的功能。用到了微信开放标签 wx-open-launch-weapp</p></blockquote><h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><blockquote><p>登录微信小程序公众平台-设置-账号信息 获取小程序 AppID 及原始 ID</p><p>H5 跳转小程序的路径及参数</p><p>获取 URL Scheme</p></blockquote><h3 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h3><p>html</p><pre><code>&lt;wx-open-launch-weapp username=&quot;gh_XXXX&quot; path=&quot;pages/xx/xx&quot;&gt;    &lt;script type=&quot;text/wxtag-template&quot;&gt;        &lt;button&gt;打开小程序&lt;/button&gt;    &lt;/script&gt;&lt;/wx-open-launch-weapp&gt;</code></pre><p>通过 wx-open-launch-weapp 标签可以 h5 跳转到小程序，在真机上才可以看到按钮，为了解析得到微信的标签 script 需要加上这个 type=”text/wxtag-template”，按钮的样式必须是行内样式才能有效果；在 vue 里，script 可以改成 template，能直接平铺到页面上，点击根据判断浏览器来跳转；<br>username 是小程序的原始 ID；<br>path 是跳转小程序的路径，可以带参数（按照正常的路由携带参数即可）</p><p>js</p><pre><code>// 是否为移动端export const isMobile = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|IEMobile)/i.test(    window.navigator.userAgent.toLowerCase());// 支付宝浏览器export const isZFBWork =/Alipay/i.test(window.navigator.userAgent.toLowerCase());// 判断是移动端且不是支付宝浏览器后跳转微信if(isMobile &amp;&amp; !isZFBWork) &#123;    // 提前获取XXXXX    window.location.href = &#39;weixin://dl/business/?t=XXXXX&#39;&#125;</code></pre><p>首先要判断是否是移动端，后判断是否是支付宝(支付宝浏览器不支持打开微信小程序，支付宝可以提示用户打开浏览器再去跳转), weixin://dl/business/?t=XXXXX（也可以转为短链）这个链接可以从浏览器唤起本地微信 app，并打开相关小程序。</p><h5 id="如何获取-URL-Scheme-weixin-dl-business-t-XXXXX-中的-XXXXX"><a href="#如何获取-URL-Scheme-weixin-dl-business-t-XXXXX-中的-XXXXX" class="headerlink" title="如何获取 URL Scheme (weixin://dl/business/?t=XXXXX 中的 XXXXX)"></a>如何获取 URL Scheme (weixin://dl/business/?t=XXXXX 中的 XXXXX)</h5><blockquote><p>通过服务端接口或在小程序管理后台「工具」-「生成 URL Scheme」入口可以获取打开小程序任意页面的 URL Scheme。适用于从短信、邮件、微信外网页等场景打开小程序。 通过 URL Scheme 打开小程序的场景值为 1065。<br>生成的 URL Scheme 如下所示：</p></blockquote><blockquote><p>weixin://dl/business/?t= <em>TICKET</em><br>iOS 系统支持识别 URL Scheme，可在短信等应用场景中直接通过 Scheme 跳转小程序。<br>Android 系统不支持直接识别 URL Scheme，用户无法通过 Scheme 正常打开小程序，开发者需要使用 H5 页面中转，再跳转到 Scheme 实现打开小程序，跳转代码示例如下：</p></blockquote><blockquote><p>location.href = ‘weixin://dl/business/?t= <em>TICKET</em>‘<br>该跳转方法可以在用户打开 H5 时立即调用，也可以在用户触发事件后调用。</p></blockquote><p>调用上限</p><blockquote><p>Scheme 将根据是否为到期有效与失效时间参数，分为短期有效 Scheme 与长期有效 Scheme：</p><p>单个小程序每日生成 Scheme 上限为 50 万个（包含短期有效 Scheme 与长期有效 Scheme）<br>有效时间超过 180 天的 Scheme 或永久有效的 Scheme 为长期有效 Scheme，单个小程序总共可生成长期有效 Scheme 上限为 10 万个，请谨慎调用<br>有效时间不超过 180 天的 Scheme 为短期有效 Scheme，单个小程序生成短期有效 Scheme 不设上限</p></blockquote><p>注意事项</p><blockquote><p>微信内的网页如需打开小程序请使用微信开放标签-小程序跳转按钮，无公众号也可以直接使用小程序身份开发网页并免鉴权跳转小程序，见云开发静态网站跳转小程序。符合开放范围的小程序可以下发支持打开小程序的短信<br>该功能基本覆盖当前用户正在使用的微信版本，开发者无需进行低版本兼容<br>只能生成已发布的小程序的 URL Scheme<br>通过 URL Scheme 跳转到微信时，可能会触发系统弹框询问，若用户选择不跳转，则无法打开小程序。请开发者妥善处理用户选择不跳转的场景<br>部分浏览器会限制打开网页直接跳转，可参考示例网页设置跳转按钮</p></blockquote><p>开放范围</p><blockquote><p>针对非个人主体小程序开放。</p></blockquote><p>跳转原理分析：</p><blockquote><p>从手机浏览器等非微信环境，跳转到微信，都是利用 weixin://dl/business/?ticket=XXXX 这种形式的微信 scheme,提供给这些商家的接口，把我们的链接转换成对应的 ticket 链接。</p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;本文介绍 h5 如何跳转微信小程序&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="前端开发" scheme="https://dctmz.github.io/blog/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="h5" scheme="https://dctmz.github.io/blog/tags/h5/"/>
+    
+    <category term="小程序" scheme="https://dctmz.github.io/blog/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>前端的部署方式</title>

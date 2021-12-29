@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dctmz.github.io/blog/2021/12/29/h5%E8%B7%B3%E8%BD%AC%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    
+    <lastmod>2021-12-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://dctmz.github.io/blog/2021/12/28/%E5%89%8D%E7%AB%AF%E7%9A%84%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F/</loc>
     
     <lastmod>2021-12-28</lastmod>
@@ -121,127 +130,141 @@
 
   <url>
     <loc>https://dctmz.github.io/blog</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://dctmz.github.io/blog/tags/h5/</loc>
+    <lastmod>2021-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2021-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://dctmz.github.io/blog/tags/hexo/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/blog/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/github/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/pure/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/postman/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/env/</loc>
-    <lastmod>2021-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dctmz.github.io/blog/tags/npm/</loc>
-    <lastmod>2021-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dctmz.github.io/blog/tags/git/</loc>
-    <lastmod>2021-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dctmz.github.io/blog/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2021-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dctmz.github.io/blog/tags/deploy/</loc>
-    <lastmod>2021-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dctmz.github.io/blog/tags/front/</loc>
-    <lastmod>2021-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dctmz.github.io/blog/tags/webpack/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/lint/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/sonarLint/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/spellChecker/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/npm/</loc>
+    <lastmod>2021-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/git/</loc>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/team/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/%E5%9B%A2%E9%98%9F/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2021-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/deploy/</loc>
+    <lastmod>2021-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/front/</loc>
+    <lastmod>2021-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/webpack/</loc>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -249,29 +272,29 @@
 
   
   <url>
-    <loc>https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2021-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://dctmz.github.io/blog/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <loc>https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dctmz.github.io/blog/categories/%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2021-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2021-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
