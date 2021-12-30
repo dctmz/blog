@@ -6,7 +6,7 @@
   <link href="https://dctmz.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://dctmz.github.io/blog/"/>
-  <updated>2021-12-29T09:41:23.158Z</updated>
+  <updated>2021-12-30T02:39:07.414Z</updated>
   <id>https://dctmz.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fix moment Deprecation warning</title>
+    <link href="https://dctmz.github.io/blog/2021/12/30/moment-Deprecation-warning-value-provided-is-not-in-a-recognized-RFC2822-or-ISO-format/"/>
+    <id>https://dctmz.github.io/blog/2021/12/30/moment-Deprecation-warning-value-provided-is-not-in-a-recognized-RFC2822-or-ISO-format/</id>
+    <published>2021-12-30T02:13:26.000Z</published>
+    <updated>2021-12-30T02:39:07.414Z</updated>
+    
+    <content type="html"><![CDATA[<p>在开发后台也页面的时候，发现控制台报了如下警告 ⚠️</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">react_devtools_backend.js:4045 Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.</span><br><span class="line">Arguments:</span><br><span class="line">[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 2021/12/21, _f: undefined, _strict: undefined, _locale: [object Object]</span><br><span class="line">Error</span><br></pre></td></tr></table></figure><p><img data-src="https://gitee.com/dctxf/pic/raw/master/1640830703708-1640830703698.png"></p><span id="more"></span><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>翻译了一下，大概意思是</p><blockquote><p>弃用警告：提供的值不是可识别的 RFC2822 或 ISO 格式。Moment 构造退回到 js date()，它在所有浏览器和版本中都不可靠。不推荐使用非 RFC2822/ISO 日期格式。有关更多信息，请访问<a href="http://momentjs.com/guides/#/warnings/js-date/%E3%80%82">http://momentjs.com/guides/#/warnings/js-date/。</a></p></blockquote><p>后来找了一下后端返回的时间格式为 “YYYY/MM/DD”</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol><li><h3 id="重新格式化"><a href="#重新格式化" class="headerlink" title="重新格式化"></a>重新格式化</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;2021/11/11&quot;</span>;</span><br><span class="line">moment(str.replace(<span class="string">&quot;/&quot;</span>, <span class="string">&quot;-&quot;</span>)).format(<span class="string">&quot;YYYY-MM-DD&quot;</span>);</span><br></pre></td></tr></table></figure></li><li><h3 id="关闭提示"><a href="#关闭提示" class="headerlink" title="关闭提示"></a>关闭提示</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">moment.suppressDeprecationWarnings = <span class="literal">true</span>;</span><br></pre></td></tr></table></figure></li><li><h3 id="增加时间构造"><a href="#增加时间构造" class="headerlink" title="增加时间构造"></a>增加时间构造</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;2021/11/11&quot;</span>;</span><br><span class="line">moment(<span class="keyword">new</span> <span class="built_in">Date</span>(str)).format(<span class="string">&quot;YYYY-MM-DD&quot;</span>);</span><br></pre></td></tr></table></figure></li><li><h3 id="🔥-后端改为正确格式-推荐"><a href="#🔥-后端改为正确格式-推荐" class="headerlink" title="🔥 后端改为正确格式(推荐)"></a>🔥 后端改为正确格式(推荐)</h3><p>追其根本是后端返回格式和前端要的格式不匹配，所以改为正确格式才能一劳永逸</p></li></ol><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://momentjs.com/guides/#/warnings/js-date/">https://momentjs.com/guides/#/warnings/js-date/</a></li><li><a href="https://stackoverflow.com/questions/39969570/deprecation-warning-in-moment-js-not-in-a-recognized-iso-format">https://stackoverflow.com/questions/39969570/deprecation-warning-in-moment-js-not-in-a-recognized-iso-format</a></li><li><a href="https://en.wikipedia.org/?title=RFC_2822&amp;redirect=no">https://en.wikipedia.org/?title=RFC_2822&amp;redirect=no</a></li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在开发后台也页面的时候，发现控制台报了如下警告 ⚠️&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;react_devtools_backend.js:4045 Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Arguments:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 2021/12/21, _f: undefined, _strict: undefined, _locale: [object Object]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Error&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img data-src=&quot;https://gitee.com/dctxf/pic/raw/master/1640830703708-1640830703698.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="开发" scheme="https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="moment" scheme="https://dctmz.github.io/blog/tags/moment/"/>
+    
+    <category term="js" scheme="https://dctmz.github.io/blog/tags/js/"/>
+    
+    <category term="warning" scheme="https://dctmz.github.io/blog/tags/warning/"/>
+    
+  </entry>
   
   <entry>
     <title>h5跳转微信小程序</title>
