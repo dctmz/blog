@@ -13,7 +13,7 @@
     "cd": "npm run clean && npm run deploy"
   },
   "hexo": {
-    "version": "6.0.0"
+    "version": "5.4.0"
   },
   "dependencies": {
     "hexo": "^6.0.0",
