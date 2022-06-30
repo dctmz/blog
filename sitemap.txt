@@ -18,12 +18,12 @@ https://dctmz.github.io/blog/categories/index.html
 https://dctmz.github.io/blog/books/index.html
 https://dctmz.github.io/blog/404.html
 https://dctmz.github.io/blog
+https://dctmz.github.io/blog/tags/h5/
+https://dctmz.github.io/blog/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/
 https://dctmz.github.io/blog/tags/vscode/
 https://dctmz.github.io/blog/tags/java/
 https://dctmz.github.io/blog/tags/macOS/
 https://dctmz.github.io/blog/tags/linux/
-https://dctmz.github.io/blog/tags/h5/
-https://dctmz.github.io/blog/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/
 https://dctmz.github.io/blog/tags/hexo/
 https://dctmz.github.io/blog/tags/blog/
 https://dctmz.github.io/blog/tags/github/
@@ -44,8 +44,8 @@ https://dctmz.github.io/blog/tags/sonarLint/
 https://dctmz.github.io/blog/tags/spellChecker/
 https://dctmz.github.io/blog/tags/team/
 https://dctmz.github.io/blog/tags/%E5%9B%A2%E9%98%9F/
-https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/
 https://dctmz.github.io/blog/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/
+https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/
 https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/
 https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91/
 https://dctmz.github.io/blog/categories/%E6%80%9D%E8%80%83/

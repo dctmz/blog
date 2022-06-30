@@ -182,6 +182,20 @@
 
   
   <url>
+    <loc>https://dctmz.github.io/blog/tags/h5/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dctmz.github.io/blog/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://dctmz.github.io/blog/tags/vscode/</loc>
     <lastmod>2022-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -204,20 +218,6 @@
   
   <url>
     <loc>https://dctmz.github.io/blog/tags/linux/</loc>
-    <lastmod>2022-06-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dctmz.github.io/blog/tags/h5/</loc>
-    <lastmod>2022-06-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dctmz.github.io/blog/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
     <lastmod>2022-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -366,14 +366,14 @@
 
   
   <url>
-    <loc>https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
+    <loc>https://dctmz.github.io/blog/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2022-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://dctmz.github.io/blog/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://dctmz.github.io/blog/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2022-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
