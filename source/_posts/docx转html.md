@@ -17,36 +17,36 @@ date: 2022-06-30 10:57:46
     <artifactId>hutool-all</artifactId>
     <version>5.8.4</version>
 </dependency>
-        <!--集成apache poi word 转html -->
+<!--集成apache poi word 转html -->
 <dependency>
-<groupId>org.apache.poi</groupId>
-<artifactId>poi</artifactId>
-<version>3.17</version>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.2</version>
 </dependency>
 <dependency>
-<groupId>org.apache.poi</groupId>
-<artifactId>poi-scratchpad</artifactId>
-<version>3.17</version>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-scratchpad</artifactId>
+    <version>5.2.2</version>
 </dependency>
 <dependency>
-<groupId>org.apache.poi</groupId>
-<artifactId>poi-ooxml</artifactId>
-<version>3.17</version>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.2</version>
 </dependency>
 <dependency>
-<groupId>fr.opensagres.xdocreport</groupId>
-<artifactId>fr.opensagres.poi.xwpf.converter.xhtml</artifactId>
-<version>2.0.1</version>
+    <groupId>fr.opensagres.xdocreport</groupId>
+    <artifactId>fr.opensagres.poi.xwpf.converter.xhtml</artifactId>
+    <version>2.0.3</version>
 </dependency>
 <dependency>
-<groupId>org.apache.poi</groupId>
-<artifactId>poi-ooxml-schemas</artifactId>
-<version>3.17</version>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml-schemas</artifactId>
+    <version>4.1.2</version>
 </dependency>
 <dependency>
-<groupId>org.apache.poi</groupId>
-<artifactId>ooxml-schemas</artifactId>
-<version>1.3</version>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>ooxml-schemas</artifactId>
+    <version>1.4</version>
 </dependency>
 ```
 
